@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuadraticEquation.MainPage">
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="Gray"
+            >
+        <HorizontalStackLayout>
+            <Entry
+                x:Name="coefficientA"
+                Placeholder="a"
+                />
+            <Label Text="x^2 + "/>
+            <Entry
+                x:Name="coefficientB"
+                Placeholder="b"
+                 />
+            <Label Text="x +"/>
+            <Entry
+                x:Name="coefficientC"
+                Placeholder="c"
+                />
+            <Label Text="="/>
+            <Label Text="0"/>
+        </HorizontalStackLayout>
+
+        <Label
+            x:Name="lblAnswer"
+                />
+        <Button
+                x:Name="ActionBtn"
+                Text="Решить" 
+                Clicked="OnActionBtnClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+
+</ContentPage>
